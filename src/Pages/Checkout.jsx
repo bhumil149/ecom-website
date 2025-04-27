@@ -48,7 +48,7 @@ function Checkout({ products }) {
         <div>
             <ToastContainer position="top-right" autoClose={2000} />
             <Button
-                variant="warning"
+                variant="dark"
                 className="w-100"
                 onClick={makePayment}
                 disabled={loading}

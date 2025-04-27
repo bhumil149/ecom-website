@@ -35,9 +35,17 @@ function NavBar() {
             <div className="container">
 
                 {/* Logo */}
-                <Link to="/" className="navbar-brand fw-bold fs-3 d-flex align-items-center">
+                <Link
+                    to="/"
+                    className="navbar-brand fw-bold fs-5 d-flex align-items-center justify-content-center border border-2 border-white rounded-circle p-2 shadow-sm hover-shadow-lg"
+                    style={{
+                        transition: 'all 0.3s ease', // Smooth transition for hover effect
+                        width: '50px', // Adjust width for circular shape
+                        height: '50px', // Adjust height for circular shape
+                    }}
+                >
                     <span className="text-danger">B</span>
-                    <span className="secondary">.</span>
+                    <span className="text-white">.</span>
                     <span className="text-white">K</span>
                 </Link>
 
@@ -64,8 +72,12 @@ function NavBar() {
                             <li className="nav-item mx-2" key={index}>
                                 <NavLink
                                     to={link.link}
-                                    className="nav-link text-white fw-bold"
-                                    activeClassName="active"  // Active link styling
+                                    className="nav-link text-white fw-bold border-0 p-2 rounded shadow-sm"
+                                    activeClassName="active-link" // Active page styling
+                                    style={{
+                                        transition: 'all 0.3s ease',
+                                        borderRadius: '5px'
+                                    }}
                                 >
                                     {link.text}
                                 </NavLink>
@@ -78,16 +90,22 @@ function NavBar() {
                         <Link
                             to="/login"
                             onClick={clearLocalStorage}
-                            className="btn bg-danger border-0 text-white p-2 rounded"
+                            className="btn bg-danger border-3 text-white p-2 rounded hover-effect"
                         >
                             <FiLogOut size={22} />
                         </Link>
 
-                        <Link to="/login" className="btn bg-success border-0 text-white p-2 rounded">
+                        <Link
+                            to="/login"
+                            className="btn bg-success border-3 text-white p-2 rounded hover-effect"
+                        >
                             <FaUser size={22} />
                         </Link>
 
-                        <Link to="/cart" className="btn bg-warning border-0 text-white p-2 rounded position-relative">
+                        <Link
+                            to="/cart"
+                            className="btn bg-warning border-3 text-white p-2 rounded position-relative hover-effect"
+                        >
                             <FaShoppingCart size={22} />
                             {cartCount > 0 && (
                                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -95,7 +113,6 @@ function NavBar() {
                                 </span>
                             )}
                         </Link>
-
                     </div>
 
                 </div>

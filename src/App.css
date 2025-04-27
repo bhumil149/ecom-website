@@ -19,30 +19,165 @@
   height: 400px;
   width: 500px;
 }
+
 .bg-info {
   --bs-bg-opacity: 1;
-  background-color: rgb(55 123 196) !important;
+  background-color: rgb(0, 0, 0) !important;
 }
+
+/* Hover effect for buttons with border */
+.hover-effect {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
 .hover-effect:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.15);
+  transform: scale(1.05); /* Slightly scales the button */
+  box-shadow: 0 0.9rem 1.5rem rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Adds a solid border on hover */
 }
+
+/* Optional: Changing the background color or border color on hover */
+.hover-effect.bg-danger:hover {
+  background-color: #dc3545; /* Darkens the background of danger button */
+}
+
+.hover-effect.bg-success:hover {
+  background-color: #28a745; /* Darkens the background of success button */
+}
+
+.hover-effect.bg-warning:hover {
+  background-color: #ffc107; /* Darkens the background of warning button */
+}
+
+/* Navbar active link styles */
 .navbar .nav-link.active {
-  color: #ffcc00;  /* Highlight color */
-  font-weight: bold;  /* Make it bolder when active */
-  text-decoration: underline; /* Optional underline */
+  color: #dfbe37 !important;
+  font-weight: bold;
+  text-decoration: underline;
 }
+
+/* Hover effect for all nav links */
+.navbar-nav .nav-link:hover {
+  color: #FFD700 !important; /* Change to the desired hover color */
+  border-bottom: 2px solid #FFD700; /* Adds a border-bottom on hover */
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active-link {
+  color: #FF6347 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Smooth transition for shadow effect */
+.navbar-brand {
+  transition: all 0.5s ease; /* Ensures all effects transition smoothly */
+}
+
+.navbar-brand:hover {
+  box-shadow: 0 10px 20px rgba(227, 221, 221, 0.3); /* Larger shadow on hover */
+  transform: scale(1.05); /* Slightly scales the element */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Adds border on hover */
+}
+
+/* Hover effect for cards */
 .card-hover:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* background-color: #fafed9 !important; light teal on hover (modern trendy color) */
+  transform: translateY(-8px) scale(1.02); /* subtle lift and scale */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* stronger shadow on hover */
 }
+
+.card {
+  transition: all 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  /* background-color: rgb(239 227 122 / 11%) !important; */
+}
+
+/* Hover underline effect */
 .hover-underline:hover {
   text-decoration: underline !important;
 }
-.card {
-  transition: all 0.3s ease;
+
+/* General button hover effects with border */
+.btn:hover {
+  transform: scale(1.05); /* Slightly scales the button */
+  /* box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.15); Adds shadow */
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Adds a solid border on hover */
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+.btn.bg-danger:hover {
+  background-color: #ffffff; /* Darkens the background of danger button */
+}
+
+.btn.bg-success:hover {
+  background-color: #28a745; /* Darkens the background of success button */
+}
+
+.btn.bg-warning:hover {
+  background-color: #ffc107; /* Darkens the background of warning button */
+}
+
+/* Optional: Customize nav brand logo hover effect */
+.navbar-brand:hover {
+  /* box-shadow: 0 10px 20px rgba(227, 221, 221, 0.3); Shadow on hover */
+  transform: scale(1.05); /* Slightly scale */
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Adds border on hover */
+}
+
+/* Positioning the badge on the cart icon */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  start: 100%;
+  translate: middle;
+}
+
+/* Badge styles */
+.badge {
+  position: absolute;
+  top: 0;
+  start: 100%;
+  transform: translate(50%, -50%);
+}
+.search-input {
+  transition: border 0.3s ease-in-out; /* Smooth transition for border */
+}
+
+/* Apply a border when the input is focused */
+.search-input:focus {
+  border: 2px solid #cccf16 !important; /* Green border when focused */
+  outline: none; /* Remove default outline */
+  /* box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); Optional: Add a shadow for better focus effect */
+}
+.footer-link {
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #2b57f8; /* Bootstrap's warning color (yellow/orange) */
+}
+.social-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #6c757d; /* default Bootstrap text-muted color */
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #2b57f8; /* Bootstrap warning color (yellow/orange) */
+  transform: scale(1.2); /* slightly bigger on hover */
+}
+.add{
+  background: linear-gradient(90deg, #a000b8, #5724ff 50%, #003efa);
 }

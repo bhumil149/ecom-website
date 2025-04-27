@@ -59,10 +59,10 @@ function Footer() {
 
                     {/* Social Icons Section */}
                     <div className="col-12 col-md-4 mb-4 mb-md-0">
-                        <h4 className="text-success mb-3">Follow us</h4>
+                        <h4 className="text-warning mb-3">Follow us</h4>
                         <div>
                             {socialIcons.map((icon, index) => (
-                                <icon.icon key={index} className="m-2 fs-4" />
+                                <icon.icon key={index} className="m-2 fs-4 social-icon" />
                             ))}
                         </div>
                     </div>
@@ -70,10 +70,10 @@ function Footer() {
                     {/* Footer Links Sections */}
                     {footerSections.map((section, index) => (
                         <div className="col-6 col-md-2 mb-4 mb-md-0" key={index}>
-                            <h6 className="text-success mb-3">{section.title}</h6>
+                            <h6 className="text-warning mb-3">{section.title}</h6>
                             <ul className="list-unstyled">
                                 {section.links.map((link, i) => (
-                                    <li key={i} className="mb-2">{link}</li>
+                                    <li key={i} className="mb-2 footer-link">{link}</li>
                                 ))}
                             </ul>
                         </div>
@@ -86,7 +86,7 @@ function Footer() {
             <div className="border-top mt-5 pt-3">
                 <p className="text-secondary text-center mb-0">
                     © 2025 All rights reserved. Designed by{" "}
-                    <a href="#" className="text-success text-decoration-none hover-underline">
+                    <a href="#" className="text-primary text-decoration-none hover-underline">
                         Bhumil Kotadiya
                     </a>.
                 </p>

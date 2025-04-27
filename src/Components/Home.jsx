@@ -186,19 +186,20 @@ function Home({ handleClickAdd }) {
                             <div className="input-group shadow rounded-3 overflow-hidden">
                                 <input
                                     type="search"
-                                    className="form-control border-0 py-3 px-4"
+                                    className="form-control border-0 py-3 px-4 search-input"
                                     placeholder="🔍 Search Products..."
                                     value={searchQuery}
                                     onChange={handleSearch}
                                     style={{ fontSize: "1.1rem" }}
                                 />
-                                <button className="btn btn-success px-4" type="button">
+                                <button className="btn btn-dark px-4" type="button">
                                     Search
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-12 col-md-4 col-lg-3 mb-4">
                         <div className="card shadow-sm border-0 rounded-4 p-4 bg-light">
@@ -266,7 +267,8 @@ function Home({ handleClickAdd }) {
                                                         <Card.Text>$ {item.price}</Card.Text>
                                                         <div className="d-flex justify-content-center">
                                                             <Button
-                                                                variant="warning"
+                                                                variant="dark"
+                                                                className=""
                                                                 onClick={() => {
                                                                     handleClickAdd(item);
                                                                     toast.success('Added to cart!', {

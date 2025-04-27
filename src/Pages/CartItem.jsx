@@ -128,7 +128,7 @@ function CartItem() {
             <div className="d-flex justify-content-between mb-5 mx-4">
                 <div>
                     <Button
-                        variant="success"
+                        variant="dark"
                         className="me-3"
                         onClick={() => navigate("/", { replace: true })}
                     >

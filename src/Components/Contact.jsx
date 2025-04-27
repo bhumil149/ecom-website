@@ -101,7 +101,7 @@ function Contact() {
                                     ></textarea>
                                 </div>
                                 <div className="text-center">
-                                    <button className="btn btn-success px-5 py-2 fw-bold" type="submit">
+                                    <button className="btn btn-dark px-5 py-2 fw-bold" type="submit">
                                         Send Message
                                     </button>
                                 </div>

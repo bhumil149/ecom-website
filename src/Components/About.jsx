@@ -58,27 +58,27 @@ function About() {
                                 {[
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Deliver Quality: Offer only premium, authentic, and reliable products to our customers.",
                                     },
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Customer First: Focus on providing a smooth, enjoyable, and satisfying shopping experience every time.",
                                     },
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Accessibility: Make great products available to everyone at fair and affordable prices.",
                                     },
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Innovation: Continuously update our collection with the latest trends, technologies, and styles.",
                                     },
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Trust & Transparency: Build long-term relationships by being honest, clear, and committed to excellent service.",
                                     },
                                 ].map((item, index) => (
@@ -107,17 +107,17 @@ function About() {
                                 {[
                                     {
                                         icon: "bi-lightbulb-fill",
-                                        color: "text-warning",
+                                        color: "text-dark",
                                         text: "Innovation: To constantly innovate and offer products that inspire creativity and improve daily lives.",
                                     },
                                     {
                                         icon: "bi-heart-fill",
-                                        color: "text-danger",
+                                        color: "text-dark",
                                         text: "Community Impact: Contributing to community well-being through meaningful initiatives and sustainability.",
                                     },
                                     {
                                         icon: "bi-check-circle-fill",
-                                        color: "text-success",
+                                        color: "text-dark",
                                         text: "Excellence: Striving for excellence in every product, service, and interaction.",
                                     },
                                 ].map((item, index) => (
